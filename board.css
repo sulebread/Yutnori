@@ -1,0 +1,56 @@
+.boardContainer {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(7, 100px);
+    gap: 5px;
+    background-color: lightgray;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cellView {
+    position: absolute;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.cellView.status-true {
+    background-color: green;
+}
+
+.start {
+    background-color: yellow;
+}
+
+.angle {
+    background-color: blue;
+}
+
+.point {
+    background-color: black;
+    width: 70px;
+    height: 70px;
+}
+
+.blank {
+    background-color: lightgray;
+    border: none;
+}
